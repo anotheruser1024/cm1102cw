@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<meta charset="utf-8">
+	<title>Easter Sunday</title>
+</head>
+<body>
+	<form action="cgi=bin/eastersunForm.py" method="POST">
+		
+	
+	<<fieldset>
+		<legend>Year Select</legend>
+		<input type="text" name="Year">
+
+	</fieldset>
+	<fieldset>
+		<legend>Select Date format</legend>
+			<form action="/cgi-bin/eastersunForm.py" method="POST">
+			<p>What date format would you like?<p>		
+			<input type="radio" name="date" value="Ture" checked>dd/mm/yy
+			<input type="radio" name="date" value="False">Day month year
+	</fieldset>
+	<fieldset>		
+		<legend>Get Date</legend>
+		<form action="/cgi-bin/eastersunForm.py" method="POST" ></form>
+		<input type="submit" value="Get the date of Easter sunday">
+	</fieldset>
+	</form>
+</body>
+</html>
